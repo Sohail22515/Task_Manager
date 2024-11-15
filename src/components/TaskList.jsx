@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import Task from './Task';
-
+import './List.css'
 const TaskList = ({ tasks, deleteTask, updateTask }) => {
 
   const [sortOption, setSortOption] = useState(()=>{
@@ -27,9 +27,10 @@ const TaskList = ({ tasks, deleteTask, updateTask }) => {
       </select>
       <div className="task-list">
         {sortedTasks.map(task => (
-          <Task key={task.id} task={task} deleteTask={deleteTask} updateTask={updateTask} />
+          <div className='list'><Task key={task.id} task={task} deleteTask={deleteTask} updateTask={updateTask} /></div>
         ))}
       </div>
+      
     </div>
   )
 }

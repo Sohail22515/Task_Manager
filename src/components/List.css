@@ -1,0 +1,31 @@
+.list{
+    transform-style: preserve-3d;
+    transform:perspective(1000px);
+}
+.task-list .list{
+    transition: .5s;
+}
+
+.task-list .list:hover{
+    transform: translateX(30px);
+    scale: 1.1;
+}
+
+.task-list .list:hover + *{
+    transform: translateX(20px);
+   
+}
+
+.task-list .list:hover + * + *{
+    transform: translateX(10px) ;
+
+}
+
+
+.task-list .list:has(+ *:hover){
+    transform: translateX(20px);
+}
+
+.task-list .list:has(+ * + * :hover){
+    transform: translateX(10px);
+}

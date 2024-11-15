@@ -1,69 +1,74 @@
+
 .app {
-    max-width: 500px;
-    margin: auto;
-    text-align: center;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  .task-form {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .task-form input {
-    flex: 1;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  
-  .task-form button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #5cb85c;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .task-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .task {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-  }
-  
-  .task.completed span {
-    text-decoration: line-through;
-    color: gray;
-  }
-  
-  .task select {
-    margin-left: auto;
-    margin-right: 10px;
-  }
-  
-  .delete-icon {
-    color: #d9534f;
-    cursor: pointer;
-  }
-  
-  .search-bar {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 15px;
-  }
-  
+  background-color: #d6d6d6;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+h1 {
+  color: #333;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.task-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #5cb85c;
+  color: white;
+  cursor: pointer;
+}
+.task-form button:hover{
+  scale: 1.1;
+  color:black;
+}
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task select {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.delete-icon {
+  color: #d9534f;
+  cursor: pointer;
+}
+
+.search-bar {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
